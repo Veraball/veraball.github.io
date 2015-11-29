@@ -1,0 +1,15 @@
+footer {
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  padding: 2rem 0;
+  a {
+    color: hsl(0, 0%, 80%);
+    &:hover {
+      color: hsl(0, 0%, 95%);
+    }
+    &:active {
+      color: hsl(0, 0%, 60%);
+    }
+  }
+}

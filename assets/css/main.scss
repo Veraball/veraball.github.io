@@ -1,0 +1,145 @@
+---
+# This ensures thet Jekyll reads this file
+---
+
+@import "fonts";
+@import "navigation";
+@import "footer";
+
+::-moz-selection {
+  background-color: hsl(100, 50%, 40%);
+  color: hsl(0, 0%, 100%);
+}
+
+::selection {
+  background-color: hsl(100, 50%, 40%);
+  color: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 25%);
+  cursor: default;
+  font-family: "Roboto Light", sans-serif;
+  font-weight: 300;
+  font-size: 110%;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: hsl(100, 50%, 40%);
+  transition: .15s;
+}
+
+a:hover {
+  color: hsl(100, 50%, 60%);
+}
+
+a:active {
+  color: hsl(100, 50%, 20%);
+}
+
+h1,
+h2 {
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.jumbotron {
+  background-image: url("../../media/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 0 0 .5rem hsl(0, 0%, 0%);
+  padding-top: 33vh;
+  text-align: center;
+  h1, h2 {
+    text-shadow: 0 0 .5rem hsl(0, 0%, 0%);
+    margin: 0;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+  &.reduced {
+    height: 50vh;
+    padding-top: 10vh;
+  }
+}
+
+.button {
+  background-color: hsl(120, 50%, 50%);
+  box-shadow: 0 0 .5rem hsl(0, 0%, 0%);
+  border-radius: .5rem;
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  text-shadow: none;
+  &:hover {
+    background-color: hsl(120, 50%, 60%);
+    color: hsl(0, 0%, 100%);
+  }
+  &:active {
+    background-color: hsl(120, 50%, 40%);
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+.download {
+  background-color: hsla(0, 0%, 0%, .4);
+  height: 12rem;
+  width: 32rem;
+  max-width: 100vw;
+  margin: 1rem auto;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-info {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.content {
+  margin: 3rem 4%;
+}
+
+@media (min-width: 32rem) {
+  .content {
+    margin: 3rem 8%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .content {
+    margin: 3rem 16%;
+  }
+}
+
+@media (min-width: 64rem) {
+  .content {
+    margin: 3rem 20%;
+  }
+}
+
+@media (min-width: 80rem) {
+  .content {
+    margin: 3rem 25%;
+  }
+}

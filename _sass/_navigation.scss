@@ -1,0 +1,27 @@
+nav {
+  background-color: hsla(0, 0%, 20%, 0.8);
+  width: 100vw;
+  height: 3rem;
+  position: fixed;
+  text-align: center;
+  ul {
+    font-size: 0;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-top: .5rem;
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: hsl(0, 0%, 90%);
+      padding: 0.875rem 2rem;
+      &:hover {
+        color: hsl(120, 50%, 70%);
+      }
+      &:active {
+        color: hsl(120, 50%, 50%);
+      }
+    }
+  }
+}
